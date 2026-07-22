@@ -104,6 +104,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 1. [**Bonn RGB-D Dynamic (5 video clips with 110 frames each): δ<sub>1</sub>>=0.979**](#bonn-rgb-d-dynamic-5-video-clips-with-110-frames-each-δ10979)
 1. [**Bonn RGB-D Dynamic (5 video clips with 110 frames each): AbsRel<=0.052**](#bonn-rgb-d-dynamic-5-video-clips-with-110-frames-each-absrel0052)
 ### Single Image Depth Estimation Rankings
+1. [**Synth4K: δ<sub>1</sub>>=0.883**](#synth4k-δ10883)
 1. [**DIODE: δ<sub>1</sub>>=0.953**](#diode-δ10953)
 ### Appendices
 - **Appendix 1: Selection of rankings for this repository** (to do)
@@ -213,6 +214,16 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-depth-estimation-rankingsand-stereo-video-conversion-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
+## Synth4K: δ<sub>1</sub>>=0.883
+| RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;δ<sub>1</sub>&nbsp;↑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2607.17967)<br />Table C.1<br />MoGe-3 |
+|:---:|:---:|:---:|
+| 1 | **MoGe-3 ViT-G Step 3**<br />[![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2607.17967) [![GitHub Stars](https://img.shields.io/github/stars/microsoft/MoGe)](https://github.com/microsoft/MoGe) | **0.949** {MF} |
+| 2 | **MoGe-2**<br />[![NeurIPS](https://img.shields.io/badge/2025-NeurIPS-68448a)](https://proceedings.neurips.cc/paper_files/paper/2025/hash/336572db3e99930814d6b328d4220cb6-Abstract-Conference.html) [![GitHub Stars](https://img.shields.io/github/stars/microsoft/MoGe)](https://github.com/microsoft/MoGe) | **0.913** {MF} |
+| 3 | **Depth Anything 3**<br />[![arXiv](https://img.shields.io/badge/2025-arXiv-b31b1b)](https://arxiv.org/abs/2511.10647) [![GitHub Stars](https://img.shields.io/github/stars/ByteDance-Seed/Depth-Anything-3)](https://github.com/ByteDance-Seed/Depth-Anything-3) | **0.883** {MF} |
+
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-depth-estimation-rankingsand-stereo-video-conversion-rankings)
+[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+
 ## DIODE: δ<sub>1</sub>>=0.953
 | RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;δ<sub>1</sub>&nbsp;↑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2025-arXiv-b31b1b)](https://arxiv.org/abs/2511.10647)<br />Table 4<br />DA3 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;δ<sub>1</sub>&nbsp;↑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![ICCV](https://img.shields.io/badge/2025-ICCV-fcb900)](https://openaccess.thecvf.com/content/ICCV2025/html/Xu_GeometryCrafter_Consistent_Geometry_Estimation_for_Open-world_Videos_with_Diffusion_Priors_ICCV_2025_paper.html)<br />Table 2<br />GC | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;δ<sub>1</sub>&nbsp;↑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![NeurIPS](https://img.shields.io/badge/2025-NeurIPS-68448a)](https://arxiv.org/abs/2510.07316)<br />Table 1<br />PPD | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;δ<sub>1</sub>&nbsp;↑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![NeurIPS](https://img.shields.io/badge/2024-NeurIPS-68448a)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/26cfdcd8fe6fd75cc53e92963a656c58-Abstract-Conference.html)<br />Table 2<br />DA V2 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -290,6 +301,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 | M2SVid | - | M2SVid: End-to-End Inpainting and Refinement for Monocular-to-Stereo Video Conversion | [![3DV](https://img.shields.io/badge/2026-3DV-8fcaff)](https://arxiv.org/abs/2505.16565) | [![GitHub Stars](https://img.shields.io/github/stars/google-research/m2svid)](https://github.com/google-research/m2svid) |
 | MegaSaM | - | MegaSaM: Accurate, Fast, and Robust Structure and Motion from Casual Dynamic Videos | [![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2025/html/Li_MegaSaM_Accurate_Fast_and_Robust_Structure_and_Motion_from_Casual_CVPR_2025_paper.html) | [![GitHub Stars](https://img.shields.io/github/stars/mega-sam/mega-sam)](https://github.com/mega-sam/mega-sam) |
 | Metric3D v2 | M3D v2 | Metric3D v2: A Versatile Monocular Geometric Foundation Model for Zero-shot Metric Depth and Surface Normal Estimation | [![TPAMI](https://img.shields.io/badge/2024-TPAMI-fefd02)](https://ieeexplore.ieee.org/document/10638254)<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2404.15506) | [![GitHub Stars](https://img.shields.io/github/stars/YvanYin/Metric3D)](https://github.com/YvanYin/Metric3D) |
+| MoGe-3 | Mo3 | MoGe-3: Fine-Detail Monocular Geometry Estimation with Self-Guided Sparse Volumetric Refinement | [![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2607.17967) | [![GitHub Stars](https://img.shields.io/github/stars/microsoft/MoGe)](https://github.com/microsoft/MoGe) |
 | MoRE | - | MoRE: 3D Visual Geometry Reconstruction Meets Mixture-of-Experts | [![arXiv](https://img.shields.io/badge/2025-arXiv-b31b1b)](https://arxiv.org/abs/2510.27234) | [![GitHub Stars](https://img.shields.io/github/stars/alibaba/Taobao3D)](https://github.com/alibaba/Taobao3D) |
 | NVDS | - | Neural Video Depth Stabilizer | [![ICCV](https://img.shields.io/badge/2023-ICCV-fcb900)](https://openaccess.thecvf.com/content/ICCV2023/html/Wang_Neural_Video_Depth_Stabilizer_ICCV_2023_paper.html) | [![GitHub Stars](https://img.shields.io/github/stars/RaymondWang987/NVDS)](https://github.com/RaymondWang987/NVDS) |
 | Pixel-Perfect Depth | PPD | Pixel-Perfect Depth with Semantics-Prompted Diffusion Transformers | [![NeurIPS](https://img.shields.io/badge/2025-NeurIPS-68448a)](https://arxiv.org/abs/2510.07316) | [![GitHub Stars](https://img.shields.io/github/stars/gangweix/pixel-perfect-depth)](https://github.com/gangweix/pixel-perfect-depth) |
