@@ -1,6 +1,35 @@
 # <p align=center>Video Depth Estimation Rankings<br />and Stereo Video Conversion Rankings</p>
 
+## <p align=center>Table of Contents</p>
+
+### Introduction
+- [**Purpose of this repository**](#purpose-of-this-repository)
+- [**Awesome Stereo Video Conversion**](#awesome-stereo-video-conversion)
+- [**Awesome Synthetic RGB-D Image Datasets for Training HD Video Depth Estimation Models**](#awesome-synthetic-rgb-d-image-datasets-for-training-hd-video-depth-estimation-models)
+- [**Awesome Synthetic RGB-D Video Datasets for Training and Testing HD Video Depth Estimation Models**](#awesome-synthetic-rgb-d-video-datasets-for-training-and-testing-hd-video-depth-estimation-models)
+### Stereo Video Conversion Rankings
+- [**Stereo4D (400 video clips with 16 frames each at 5 fps): LPIPS<=0.242**](#stereo4d-400-video-clips-with-16-frames-each-at-5-fps-lpips0242)
+- [**StereoWorld-11M (1000 video clips with 81 frames each at 12 fps): LPIPS<=0.1869**](#stereoworld-11m-1000-video-clips-with-81-frames-each-at-12-fps-lpips01869)
+### Video Depth Estimation Rankings
+- [**170-frame ScanNet: TAE**](#170-frame-scannet-tae)
+- [**500-frame Bonn RGB-D Dynamic: δ<sub>1</sub>**](#500-frame-bonn-rgb-d-dynamic-δ1)
+### Single Image Depth Estimation Rankings
+- [**Synth4K: δ<sub>1</sub>**](#synth4k-δ1)
+### Appendices
+- **Appendix 1: Selection of rankings for this repository** (to do)
+- **Appendix 2: Selection of metrics for the rankings** (to do)
+- **Appendix 3: Rules for qualifying models for the rankings** (to do)
+- [**Appendix 4: Notes on the table: Awesome Synthetic RGB-D Video Datasets for Training and Testing HD Video Depth Estimation Models**](#appendix-4-notes-on-the-table-awesome-synthetic-rgb-d-video-datasets-for-training-and-testing-hd-video-depth-estimation-models)
+- [**Appendix 5: List of all research papers from the above rankings**](#appendix-5-list-of-all-research-papers-from-the-above-rankings)
+- [**Appendix 6: List of all research papers from the column headers of the table: Awesome Synthetic RGB-D Video Datasets for Training and Testing HD Video Depth Estimation Models**](#appendix-6-list-of-all-research-papers-from-the-column-headers-of-the-table-awesome-synthetic-rgb-d-video-datasets-for-training-and-testing-hd-video-depth-estimation-models)
+
+## Purpose of this repository
+>**"The 3D shows you a window into reality; the higher frame rate takes the glass out of the window"**  
+>— James Cameron
+
 **Researchers**, if you have found your way here, please consider developing a new Stereo Video Conversion model with a resolution of 1080p based, for example, on [LTX-2.3](https://github.com/Lightricks/LTX-2), taking into account the memory optimisations proposed by, for example, the [Wan2GP](https://github.com/deepbeepmeep/Wan2GP) developers.
+
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## Awesome Stereo Video Conversion
 The following list includes **all Stereo Video Conversion methods from the last 16 months, from 1 April 2025 to 11 July 2026**.
@@ -19,7 +48,7 @@ This list was created because there is a significant problem with public access 
 | M2SVid | SVD | 22 May 2025 | [![3DV](https://img.shields.io/badge/2026-3DV-8fcaff)](https://arxiv.org/abs/2505.16565) | [![GitHub Stars](https://img.shields.io/github/stars/google-research/m2svid)](https://github.com/google-research/m2svid) | [![GitHub Stars](https://img.shields.io/github/stars/m2svid/m2svid.github.io)](https://github.com/m2svid/m2svid.github.io) |
 | Eye2Eye | Lumiere | 30 Apr 2025 | [![arXiv](https://img.shields.io/badge/2025-arXiv-b31b1b)](https://arxiv.org/abs/2505.00135) | - | [![GitHub Stars](https://img.shields.io/github/stars/video-Eye2Eye/video-eye2eye.github.io)](https://github.com/video-Eye2Eye/video-eye2eye.github.io) |
 
---------------
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## Awesome Synthetic RGB-D Image Datasets for Training HD Video Depth Estimation Models
 Although video depth estimation models should be trained mainly on synthetic RGB-D video datasets I decided to add two synthetic RGB-D image datasets because of their unique features. 
@@ -27,6 +56,8 @@ Although video depth estimation models should be trained mainly on synthetic RGB
 |:---:|:---:|:---:|:---:|:---:|
 | 1 | **[SynthHuman](https://microsoft.github.io/DAViD/)<br />📌&nbsp;Human&nbsp;faces&nbsp;😍** | [![ICCV](https://img.shields.io/badge/2025-ICCV-fcb900)](https://openaccess.thecvf.com/content/ICCV2025/html/Saleh_DAViD_Data-efficient_and_Accurate_Vision_Models_from_Synthetic_Data_ICCV_2025_paper.html) | **384×512** | The dataset contains 98040 samples feature the face, 99976 sample feature the full body and 99992 samples feature the upper body. DAViD trained on this dataset alone achieved better depth estimation results than Depth Anything V2 Large, Depth Pro and even Sapiens-2B on the Goliath-Face test set. See the results in [Table 1](https://openaccess.thecvf.com/content/ICCV2025/html/Saleh_DAViD_Data-efficient_and_Accurate_Vision_Models_from_Synthetic_Data_ICCV_2025_paper.html). |
 | 2 | **[MegaSynth](https://hwjiang1510.github.io/MegaSynth/)** | [![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2025/html/Jiang_MegaSynth_Scaling_Up_3D_Scene_Reconstruction_with_Synthesized_Data_CVPR_2025_paper.html) | **512×512** | Huge size: 700K scenes and the incredible improvement in depth estimation results of the fine-tuned Depth Anything V2 ViT-B model on MegaSynth and evaluated on Hypersim. See the results in [Table 6](https://openaccess.thecvf.com/content/CVPR2025/html/Jiang_MegaSynth_Scaling_Up_3D_Scene_Reconstruction_with_Synthesized_Data_CVPR_2025_paper.html). |
+
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## Awesome Synthetic RGB-D Video Datasets for Training and Testing HD Video Depth Estimation Models
 The following list contains only synthetic RGB-D datasets in which at least some of the images can be composited into a video sequence of at least 32 frames. The minimum number of frames was chosen on the basis of the ablation studies shown in [Table 5](https://openaccess.thecvf.com/content/CVPR2025/html/Chen_Video_Depth_Anything_Consistent_Depth_Estimation_for_Super-Long_Videos_CVPR_2025_paper.html) by the Video Depth Anything researchers.  
@@ -90,27 +121,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 |  | **Total: T (training)** |  |  | **15** | **11** | **10** | **9** | **9** | **6** | **6** | **4** | **2** | **2** | **1** |
 |  | **Total: E (testing)** |  |  | **1** | **1** | **2** | **2** | **2** | **1** | **1** | **1** | **1** | **1** | **2** |
 
---------------------
-
-## <p align=center>List of Rankings</p>
-
-### Stereo Video Conversion Rankings
-1. [**Stereo4D (400 video clips with 16 frames each at 5 fps): LPIPS<=0.242**](#stereo4d-400-video-clips-with-16-frames-each-at-5-fps-lpips0242)
-1. [**StereoWorld-11M (1000 video clips with 81 frames each at 12 fps): LPIPS<=0.1869**](#stereoworld-11m-1000-video-clips-with-81-frames-each-at-12-fps-lpips01869)
-### Video Depth Estimation Rankings
-1. [**170-frame ScanNet: TAE**](#170-frame-scannet-tae)
-1. [**500-frame Bonn RGB-D Dynamic: δ<sub>1</sub>**](#500-frame-bonn-rgb-d-dynamic-δ1)
-### Single Image Depth Estimation Rankings
-1. [**Synth4K: δ<sub>1</sub>**](#synth4k-δ1)
-### Appendices
-- **Appendix 1: Selection of rankings for this repository** (to do)
-- **Appendix 2: Selection of metrics for the rankings** (to do)
-- **Appendix 3: Rules for qualifying models for the rankings** (to do)
-- [**Appendix 4: Notes on the table: Awesome Synthetic RGB-D Video Datasets for Training and Testing HD Video Depth Estimation Models**](#appendix-4-notes-on-the-table-awesome-synthetic-rgb-d-video-datasets-for-training-and-testing-hd-video-depth-estimation-models)
-- [**Appendix 5: List of all research papers from the above rankings**](#appendix-5-list-of-all-research-papers-from-the-above-rankings)
-- [**Appendix 6: List of all research papers from the column headers of the table: Awesome Synthetic RGB-D Video Datasets for Training and Testing HD Video Depth Estimation Models**](#appendix-6-list-of-all-research-papers-from-the-column-headers-of-the-table-awesome-synthetic-rgb-d-video-datasets-for-training-and-testing-hd-video-depth-estimation-models)
-
---------------------
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## Stereo4D (400 video clips with 16 frames each at 5 fps): LPIPS<=0.242
 | RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![3DV](https://img.shields.io/badge/2026-3DV-8fcaff)](https://arxiv.org/abs/2505.16565)<br />Table 1<br />M2SVid |
@@ -119,8 +130,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 | 2 | **SVG**<br />[![ICLR](https://img.shields.io/badge/2025-ICLR-d5df32)](https://openreview.net/forum?id=sx2jXZuhIx) [![GitHub Stars](https://img.shields.io/github/stars/google/Stereoscopic-Video-Generation-via-Denoising-Frame-Matrix)](https://github.com/google/Stereoscopic-Video-Generation-via-Denoising-Frame-Matrix) | **0.217** {MF} |
 | 3 | **StereoCrafter**<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2409.07447) [![GitHub Stars](https://img.shields.io/github/stars/TencentARC/StereoCrafter)](https://github.com/TencentARC/StereoCrafter) | **0.242** {MF} |
 
-[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-depth-estimation-rankingsand-stereo-video-conversion-rankings)
-[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## StereoWorld-11M (1000 video clips with 81 frames each at 12 fps): LPIPS<=0.1869
 | RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2026-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2026/html/Xing_StereoWorld_Geometry-Aware_Monocular-to-Stereo_Video_Generation_CVPR_2026_paper.html)<br />Table 2<br />StereoWorld |
@@ -128,8 +138,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 | 1 | **StereoWorld**<br />[![CVPR](https://img.shields.io/badge/2026-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2026/html/Xing_StereoWorld_Geometry-Aware_Monocular-to-Stereo_Video_Generation_CVPR_2026_paper.html) [![GitHub Stars](https://img.shields.io/github/stars/ke-xing/StereoWorldCode)](https://github.com/ke-xing/StereoWorldCode) | **0.0952** {MF} |
 | 2 | **StereoCrafter**<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2409.07447) [![GitHub Stars](https://img.shields.io/github/stars/TencentARC/StereoCrafter)](https://github.com/TencentARC/StereoCrafter) | **0.1869** {MF} |
 
-[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-depth-estimation-rankingsand-stereo-video-conversion-rankings)
-[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## 170-frame ScanNet: TAE
 📝 **Note:** This ranking is based on [the evaluation protocol proposed by Video Depth Anything developers](https://github.com/DepthAnything/Video-Depth-Anything/tree/main/benchmark).  
@@ -146,8 +155,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 | 9 | **Depth Anything V2 Large**<br />[![NeurIPS](https://img.shields.io/badge/2024-NeurIPS-68448a)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/26cfdcd8fe6fd75cc53e92963a656c58-Abstract-Conference.html) [![GitHub Stars](https://img.shields.io/github/stars/DepthAnything/Depth-Anything-V2)](https://github.com/DepthAnything/Depth-Anything-V2) | **1.140** {1} | **1.14** {1} | **1.140** {1} |
 | 10 | **NVDS**<br />[![ICCV](https://img.shields.io/badge/2023-ICCV-fcb900)](https://openaccess.thecvf.com/content/ICCV2023/html/Wang_Neural_Video_Depth_Stabilizer_ICCV_2023_paper.html) [![GitHub Stars](https://img.shields.io/github/stars/RaymondWang987/NVDS)](https://github.com/RaymondWang987/NVDS) | **2.176** {4} | - | **2.176** {4} |
 
-[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-depth-estimation-rankingsand-stereo-video-conversion-rankings)
-[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## 500-frame Bonn RGB-D Dynamic: δ<sub>1</sub>
 📝 **Note 1:** This ranking is based on [the evaluation protocol proposed by Video Depth Anything developers](https://github.com/DepthAnything/Video-Depth-Anything/tree/main/benchmark).  
@@ -165,8 +173,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 | 9 | **NVDS**<br />[![ICCV](https://img.shields.io/badge/2023-ICCV-fcb900)](https://openaccess.thecvf.com/content/ICCV2023/html/Wang_Neural_Video_Depth_Stabilizer_ICCV_2023_paper.html) [![GitHub Stars](https://img.shields.io/github/stars/RaymondWang987/NVDS)](https://github.com/RaymondWang987/NVDS) | **0.674** {4} | **0.674** {4} | **0.674** {4} | **0.674** {4} |
 | 10 | **ChronoDepth**<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2025/html/Shao_Learning_Temporally_Consistent_Video_Depth_from_Video_Diffusion_Priors_CVPR_2025_paper.html) [![GitHub Stars](https://img.shields.io/github/stars/jhaoshao/ChronoDepth)](https://github.com/jhaoshao/ChronoDepth) | **0.665** {MF} | **0.665** {MF} | **0.665** {MF} | **0.665** {MF} |
 
-[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-depth-estimation-rankingsand-stereo-video-conversion-rankings)
-[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## Synth4K: δ<sub>1</sub>
 | RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;δ<sub>1</sub>&nbsp;↑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2607.17967)<br />Table C.1<br />MoGe-3 |
@@ -180,8 +187,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 | 7 | **Depth Pro**<br />[![ICLR](https://img.shields.io/badge/2025-ICLR-d5df32)](https://openreview.net/forum?id=aueXfY0Clv) [![GitHub Stars](https://img.shields.io/github/stars/apple/ml-depth-pro)](https://github.com/apple/ml-depth-pro) | **0.866** {1} |
 | 8 | **UniK3D**<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2025/html/Piccinelli_UniK3D_Universal_Camera_Monocular_3D_Estimation_CVPR_2025_paper.html) [![GitHub Stars](https://img.shields.io/github/stars/lpiccinelli-eth/UniK3D)](https://github.com/lpiccinelli-eth/UniK3D) | **0.862** {1} |
 
-[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-depth-estimation-rankingsand-stereo-video-conversion-rankings)
-[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## Appendix 4: Notes on the table: Awesome Synthetic RGB-D Video Datasets for Training and Testing HD Video Depth Estimation Models
 📝 **Note 1:** Example of arranging images in the correct order to make a 32-frame video sequence for the [ClaraVid](https://rdbch.github.io/claravid/) dataset:
@@ -229,8 +235,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 📝 **Note 5:** Check before use the [Aria Synthetic Environments](https://www.projectaria.com/datasets/ase/) dataset for training HD video depth estimation models! The depth maps in this dataset have large white areas of unknown depth, which should not happen with a synthetic dataset. Example depth map:  
 `<your-data-path>/75/depth/depth0000109.png`.
 
-[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-depth-estimation-rankingsand-stereo-video-conversion-rankings)
-[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## Appendix 5: List of all research papers from the above rankings
 | Method | Abbr. | Paper | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />(Alt link) | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; |
@@ -259,8 +264,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 | UniK3D | - | UniK3D: Universal Camera Monocular 3D Estimation | [![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2025/html/Piccinelli_UniK3D_Universal_Camera_Monocular_3D_Estimation_CVPR_2025_paper.html) | [![GitHub Stars](https://img.shields.io/github/stars/lpiccinelli-eth/UniK3D)](https://github.com/lpiccinelli-eth/UniK3D) |
 | Video Depth Anything | VDA | Video Depth Anything: Consistent Depth Estimation for Super-Long Videos | [![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2025/html/Chen_Video_Depth_Anything_Consistent_Depth_Estimation_for_Super-Long_Videos_CVPR_2025_paper.html) | [![GitHub Stars](https://img.shields.io/github/stars/DepthAnything/Video-Depth-Anything)](https://github.com/DepthAnything/Video-Depth-Anything) |
 
-[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-depth-estimation-rankingsand-stereo-video-conversion-rankings)
-[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## Appendix 6: List of all research papers from the column headers of the table: Awesome Synthetic RGB-D Video Datasets for Training and Testing HD Video Depth Estimation Models
 | Method | Abbr. | Paper | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />(Alt link) | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; |
@@ -277,8 +281,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 | Video Depth Anything | VDA | Video Depth Anything: Consistent Depth Estimation for Super-Long Videos | [![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2025/html/Chen_Video_Depth_Anything_Consistent_Depth_Estimation_for_Super-Long_Videos_CVPR_2025_paper.html) | [![GitHub Stars](https://img.shields.io/github/stars/DepthAnything/Video-Depth-Anything)](https://github.com/DepthAnything/Video-Depth-Anything) |
 | ViGeo | VG | Towards Consistent Video Geometry Estimation | [![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2605.30060) | [![GitHub Stars](https://img.shields.io/github/stars/aigc3d/ViGeo)](https://github.com/aigc3d/ViGeo) |
 
-[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-depth-estimation-rankingsand-stereo-video-conversion-rankings)
-[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## List of research papers to be added to the rankings
 | Method | Abbr. | Paper | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />(Alt link) | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; |
@@ -292,5 +295,4 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 | Restereo | - | Restereo: Unifying diffusion stereo video generation and restoration | [![CVPRW](https://img.shields.io/badge/2026-CVPRW-1e407f)](https://openreview.net/forum?id=Tdlj7kRMpy) | - |
 | Eye2Eye | - | Eye2Eye: A Simple Approach for Monocular-to-Stereo Video Synthesis | [![arXiv](https://img.shields.io/badge/2025-arXiv-b31b1b)](https://arxiv.org/abs/2505.00135) | - |
 
-[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-depth-estimation-rankingsand-stereo-video-conversion-rankings)
-[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
