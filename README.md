@@ -27,7 +27,7 @@
 >**"The 3D shows you a window into reality; the higher frame rate takes the glass out of the window"**  
 >— James Cameron
 
-**Researchers**, if you have found your way here, please consider developing a new Stereo Video Conversion model with a resolution of 1080p based, for example, on [LTX-2.3](https://github.com/Lightricks/LTX-2), taking into account the memory optimisations proposed by, for example, the [Wan2GP](https://github.com/deepbeepmeep/Wan2GP) developers.
+**Researchers**, if you have found your way here, please consider developing a new Stereo Video Conversion model based on [MiniMax H3](https://huggingface.co/MiniMaxAI/MiniMax-H3).
 
 [![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
