@@ -38,11 +38,11 @@ The **SDG-SynHuman** dataset contains 631 million RGB frames, with paired metric
 [![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## Awesome Stereo Video Conversion
-The following list includes **all Stereo Video Conversion methods from the last 16 months, from 1 April 2025 to 1 August 2026**.
+The following list includes **all Stereo Video Conversion methods from the last 17 months, from 1 April 2025 to 1 September 2026**.
 This list was created because there is a significant problem with public access to the latest Stereo Video Conversion models, which makes it difficult for researchers to compare their work with the current state of the art and to use the same test set. Consequently, this also makes it difficult to present a single ranking that showcases all of the best models.
-| Method | Backbone | Submitted&nbsp;on<br />(arXiv) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Code<br />(website) |
+| Method | Backbone | Submitted&nbsp;on<br />(arXiv) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Website<br />code |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| GRT | ProPainter | 6 Jul 2026 | [![ICML](https://img.shields.io/badge/2026-ICML-8acb37)](https://openreview.net/forum?id=c6cEfncR9W) | - | - |
+| GRT | ProPainter | 6 Jul 2026 | [![ICML](https://img.shields.io/badge/2026-ICML-8acb37)](https://openreview.net/forum?id=c6cEfncR9W) | - | [![GitHub Stars](https://img.shields.io/github/stars/Visual-AI/visual-ai.github.io)](https://github.com/Visual-AI/visual-ai.github.io/tree/main/grt) |
 | αDepth | ? | 29 May 2026 | [![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2606.00386) | - | - |
 | StereoCrafter2 | Wan2.1-VACE-14B | - | - | [![GitHub Stars](https://img.shields.io/github/stars/TencentARC/StereoCrafter)](https://github.com/TencentARC/StereoCrafter/tree/v2) | - |
 | DreamStereo | Wan2.1-1.3B | 14 Apr 2026 | [![CVPR](https://img.shields.io/badge/2026-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2026/html/Huang_DreamStereo_Towards_Real-Time_Stereo_Inpainting_for_HD_Videos_CVPR_2026_paper.html) | - | [![GitHub Stars](https://img.shields.io/github/stars/huangyuan2020/DreamStereo)](https://github.com/huangyuan2020/DreamStereo) |
