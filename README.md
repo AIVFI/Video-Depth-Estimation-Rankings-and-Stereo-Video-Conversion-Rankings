@@ -9,7 +9,6 @@
 - [**Awesome Synthetic RGB-D Video Datasets for Training and Testing HD Video Depth Estimation Models**](#awesome-synthetic-rgb-d-video-datasets-for-training-and-testing-hd-video-depth-estimation-models)
 ### Stereo Video Conversion Rankings
 - [**Stereo4D (400 video clips with 16 frames each at 5 fps): LPIPS<=0.242**](#stereo4d-400-video-clips-with-16-frames-each-at-5-fps-lpips0242)
-- [**StereoWorld-11M (1000 video clips with 81 frames each at 12 fps): LPIPS<=0.1869**](#stereoworld-11m-1000-video-clips-with-81-frames-each-at-12-fps-lpips01869)
 ### Video Depth Estimation Rankings
 - [**170-frame ScanNet: TAE**](#170-frame-scannet-tae)
 - [**500-frame Bonn RGB-D Dynamic: δ<sub>1</sub>**](#500-frame-bonn-rgb-d-dynamic-δ1)
@@ -138,14 +137,6 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 
 [![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
-## StereoWorld-11M (1000 video clips with 81 frames each at 12 fps): LPIPS<=0.1869
-| RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2026-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2026/html/Xing_StereoWorld_Geometry-Aware_Monocular-to-Stereo_Video_Generation_CVPR_2026_paper.html)<br />Table 2<br />StereoWorld |
-|:---:|:---:|:---:|
-| 1 | **StereoWorld**<br />[![CVPR](https://img.shields.io/badge/2026-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2026/html/Xing_StereoWorld_Geometry-Aware_Monocular-to-Stereo_Video_Generation_CVPR_2026_paper.html) [![GitHub Stars](https://img.shields.io/github/stars/ke-xing/StereoWorldCode)](https://github.com/ke-xing/StereoWorldCode) | **0.0952** {MF} |
-| 2 | **StereoCrafter**<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2409.07447) [![GitHub Stars](https://img.shields.io/github/stars/TencentARC/StereoCrafter)](https://github.com/TencentARC/StereoCrafter) | **0.1869** {MF} |
-
-[![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
-
 ## 170-frame ScanNet: TAE
 📝 **Note:** This ranking is based on [the evaluation protocol proposed by Video Depth Anything developers](https://github.com/DepthAnything/Video-Depth-Anything/tree/main/benchmark).  
 | RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;TAE&nbsp;↓&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![ECCV](https://img.shields.io/badge/2026-ECCV-67cd84)](https://arxiv.org/abs/2606.26515)<br />Table 3<br />FFN | &nbsp;&nbsp;TAE&nbsp;↓&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![ICML](https://img.shields.io/badge/2026-ICML-8acb37)](https://arxiv.org/abs/2605.10525)<br />Table 2&<br />[![GitHub Stars](https://img.shields.io/github/stars/Yuecheng919/GemDepth)](https://github.com/Yuecheng919/GemDepth#-benchmarks-performance)<br />GD | &nbsp;&nbsp;TAE&nbsp;↓&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2025/html/Chen_Video_Depth_Anything_Consistent_Depth_Estimation_for_Super-Long_Videos_CVPR_2025_paper.html)<br />Table 1<br />VDA |
@@ -264,7 +255,6 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 | Pixel-Perfect Video Depth | PPVD | Pixel-Perfect Visual Geometry Estimation | [![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2601.05246) | [![GitHub Stars](https://img.shields.io/github/stars/gangweix/pixel-perfect-depth)](https://github.com/gangweix/pixel-perfect-depth) |
 | RollingDepth | RD | Video Depth without Video Models | [![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2025/html/Ke_Video_Depth_without_Video_Models_CVPR_2025_paper.html) | [![GitHub Stars](https://img.shields.io/github/stars/prs-eth/RollingDepth)](https://github.com/prs-eth/RollingDepth) |
 | StereoCrafter | - | StereoCrafter: Diffusion-based Generation of Long and High-fidelity Stereoscopic 3D from Monocular Videos | [![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2409.07447) | [![GitHub Stars](https://img.shields.io/github/stars/TencentARC/StereoCrafter)](https://github.com/TencentARC/StereoCrafter) |
-| StereoWorld | - | StereoWorld: Geometry-Aware Monocular-to-Stereo Video Generation | [![CVPR](https://img.shields.io/badge/2026-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2026/html/Xing_StereoWorld_Geometry-Aware_Monocular-to-Stereo_Video_Generation_CVPR_2026_paper.html) | [![GitHub Stars](https://img.shields.io/github/stars/ke-xing/StereoWorldCode)](https://github.com/ke-xing/StereoWorldCode) |
 | SVG | - | SVG: 3D Stereoscopic Video Generation via Denoising Frame Matrix | [![ICLR](https://img.shields.io/badge/2025-ICLR-d5df32)](https://openreview.net/forum?id=sx2jXZuhIx) | [![GitHub Stars](https://img.shields.io/github/stars/google/Stereoscopic-Video-Generation-via-Denoising-Frame-Matrix)](https://github.com/google/Stereoscopic-Video-Generation-via-Denoising-Frame-Matrix) |
 | UniDepthV2 | UD2 | UniDepthV2: Universal Monocular Metric Depth Estimation Made Simpler | [![arXiv](https://img.shields.io/badge/2025-arXiv-b31b1b)](https://arxiv.org/abs/2502.20110) | [![GitHub Stars](https://img.shields.io/github/stars/lpiccinelli-eth/UniDepth)](https://github.com/lpiccinelli-eth/UniDepth) |
 | UniK3D | - | UniK3D: Universal Camera Monocular 3D Estimation | [![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2025/html/Piccinelli_UniK3D_Universal_Camera_Monocular_3D_Estimation_CVPR_2025_paper.html) | [![GitHub Stars](https://img.shields.io/github/stars/lpiccinelli-eth/UniK3D)](https://github.com/lpiccinelli-eth/UniK3D) |
@@ -292,12 +282,13 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 ## List of research papers to be added to the rankings
 | Method | Abbr. | Paper | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />(Alt link) | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; |
 |:---:|:---:|:---:|:---:|:---:|
+| GRT | - | Geometric Reciprocity: Unlocking Self-Supervision for Stereoscopic Video Generation | [![ICML](https://img.shields.io/badge/2026-ICML-8acb37)](https://openreview.net/forum?id=c6cEfncR9W) | - |
 | αDepth | - | αDepth: Learning Single-Pass Soft Boundary Decomposition for Stereo Conversion | [![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2606.00386) | - |
 | DreamStereo | - | DreamStereo: Towards Real-Time Stereo Inpainting for HD Videos | [![CVPR](https://img.shields.io/badge/2026-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2026/html/Huang_DreamStereo_Towards_Real-Time_Stereo_Inpainting_for_HD_Videos_CVPR_2026_paper.html) | - |
-| GRT | - | Geometric Reciprocity: Unlocking Self-Supervision for Stereoscopic Video Generation | [![ICML](https://img.shields.io/badge/2026-ICML-8acb37)](https://openreview.net/forum?id=c6cEfncR9W) | - |
 | HairGuard | - | Guardians of the Hair: Rescuing Soft Boundaries in Depth, Stereo, and Novel Views | [![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2601.03362) | - |
 | StereoPilot | - | StereoPilot: Learning Unified and Efficient Stereo Conversion via Generative Priors | [![arXiv](https://img.shields.io/badge/2025-arXiv-b31b1b)](https://arxiv.org/abs/2512.16915) | [![GitHub Stars](https://img.shields.io/github/stars/KlingTeam/StereoPilot)](https://github.com/KlingTeam/StereoPilot) |
 | Elastic3D | - | Elastic3D: Controllable Stereo Video Conversion with Guided Latent Decoding | [![CVPR](https://img.shields.io/badge/2026-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2026/html/Metzger_Elastic3D_Controllable_Stereo_Video_Conversion_with_Guided_Latent_Decoding_CVPR_2026_paper.html) | - |
+| StereoWorld | - | StereoWorld: Geometry-Aware Monocular-to-Stereo Video Generation | [![CVPR](https://img.shields.io/badge/2026-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2026/html/Xing_StereoWorld_Geometry-Aware_Monocular-to-Stereo_Video_Generation_CVPR_2026_paper.html) | [![GitHub Stars](https://img.shields.io/github/stars/ke-xing/StereoWorldCode)](https://github.com/ke-xing/StereoWorldCode) |
 | Restereo | - | Restereo: Unifying diffusion stereo video generation and restoration | [![CVPRW](https://img.shields.io/badge/2026-CVPRW-1e407f)](https://openreview.net/forum?id=Tdlj7kRMpy) | - |
 | Eye2Eye | - | Eye2Eye: A Simple Approach for Monocular-to-Stereo Video Synthesis | [![arXiv](https://img.shields.io/badge/2025-arXiv-b31b1b)](https://arxiv.org/abs/2505.00135) | - |
 
