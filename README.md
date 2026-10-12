@@ -33,10 +33,11 @@
 [![Back to Table of Contents](https://img.shields.io/badge/Back_to_Table_of_Contents-555555)](#table-of-contents)
 
 ## Awesome Stereo Video Conversion
-The following list includes **all Stereo Video Conversion methods from the last 17 months, from 1 April 2025 to 1 September 2026**.
+The following list includes **all Stereo Video Conversion methods from the last 19 months, from 1 April 2025 to 12 October 2026**.
 This list was created because there is a significant problem with public access to the latest Stereo Video Conversion models, which makes it difficult for researchers to compare their work with the current state of the art and to use the same test set. Consequently, this also makes it difficult to present a single ranking that showcases all of the best models.
 | Method | Backbone | Submitted&nbsp;on<br />(arXiv) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Website<br />code |
 |:---:|:---:|:---:|:---:|:---:|:---:|
+| StereoEngine | Wan2.2-VACE-Fun | 8 Oct 2026 | [![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2610.12734) | - | [![GitHub Stars](https://img.shields.io/github/stars/stereoengine/stereoengine.github.io)](https://github.com/stereoengine/stereoengine.github.io) |
 | GRT | ProPainter | 6 Jul 2026 | [![ICML](https://img.shields.io/badge/2026-ICML-8acb37)](https://openreview.net/forum?id=c6cEfncR9W) | - | [![GitHub Stars](https://img.shields.io/github/stars/Visual-AI/visual-ai.github.io)](https://github.com/Visual-AI/visual-ai.github.io/tree/main/grt) |
 | αDepth | ? | 29 May 2026 | [![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2606.00386) | - | - |
 | StereoCrafter2 | Wan2.1-VACE-14B | - | - | [![GitHub Stars](https://img.shields.io/github/stars/TencentARC/StereoCrafter)](https://github.com/TencentARC/StereoCrafter/tree/v2) | - |
@@ -271,6 +272,7 @@ In selecting the best datasets, comparisons of their quality can be very helpful
 ## List of research papers to be added to the rankings
 | Method | Abbr. | Paper | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />(Alt link) | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; |
 |:---:|:---:|:---:|:---:|:---:|
+| StereoEngine | - | StereoEngine: Scaling Stereo Bimanual Robot Data without Stereo Cameras | [![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2610.12734) | - |
 | GRT | - | Geometric Reciprocity: Unlocking Self-Supervision for Stereoscopic Video Generation | [![ICML](https://img.shields.io/badge/2026-ICML-8acb37)](https://openreview.net/forum?id=c6cEfncR9W) | - |
 | αDepth | - | αDepth: Learning Single-Pass Soft Boundary Decomposition for Stereo Conversion | [![arXiv](https://img.shields.io/badge/2026-arXiv-b31b1b)](https://arxiv.org/abs/2606.00386) | - |
 | DreamStereo | - | DreamStereo: Towards Real-Time Stereo Inpainting for HD Videos | [![CVPR](https://img.shields.io/badge/2026-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2026/html/Huang_DreamStereo_Towards_Real-Time_Stereo_Inpainting_for_HD_Videos_CVPR_2026_paper.html) | - |
